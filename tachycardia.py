@@ -4,7 +4,9 @@ def is_tachycardic():
     print("{}" .format(string))
     # could be upper, lower, mixed case
     string = string.lower()
-    # or have leading/trailing spaces or punctuation
+    # or have leading/trailing spaces
+    string = string.strip()
+    # or punctuation
     print("{}" .format(string))
     if string == "tachycardic":
         print("True")
