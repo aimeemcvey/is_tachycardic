@@ -1,14 +1,19 @@
 # tachycardia.py
+
+
 def is_tachycardic():
-    string = input("Input word: ")
-    print("{}" .format(string))
+    word = input("Input word: ")
+    print("{}" .format(word))
     # could be upper, lower, mixed case
-    string = string.lower()
+    word = word.lower()
+    # or have punctuation
+    import string
+    table = str.maketrans('', '', string.punctuation)
+    word = word.translate(table)
     # or have leading/trailing spaces
-    string = string.strip()
-    # or punctuation
-    print("{}" .format(string))
-    if string == "tachycardic":
+    word = word.strip()
+    print("{}" .format(word))
+    if word == "tachycardic":
         print("True")
         return True
 
