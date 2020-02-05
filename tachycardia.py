@@ -16,6 +16,9 @@ def is_tachycardic():
     if word == "tachycardic":
         print("True")
         return True
+    else:
+        print("False")
+        return False
 
 
 if __name__ == "__main__":
