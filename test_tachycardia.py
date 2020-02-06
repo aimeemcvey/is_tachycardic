@@ -34,3 +34,10 @@ def test_is_tachycardic_whitespace():
     answer = is_tachycardic(" TA.cHyCARDic?!. ")
     expected = True
     assert answer == expected
+
+
+def test_is_tachycardic_not():
+    from tachycardia import is_tachycardic
+    answer = is_tachycardic(" cardic?!. ")
+    expected = False
+    assert answer == expected
