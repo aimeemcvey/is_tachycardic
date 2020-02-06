@@ -2,7 +2,7 @@
 
 
 def is_tachycardic(word):
-    print("{}" .format(word))
+    print("{}".format(word))
     # could be upper, lower, mixed case
     word = word.lower()
     # or have punctuation
@@ -11,7 +11,7 @@ def is_tachycardic(word):
     word = word.translate(table)
     # or have leading/trailing spaces
     word = word.strip()
-    print("{}" .format(word))
+    print("{}".format(word))
     if word == "tachycardic":
         print("True")
         return True

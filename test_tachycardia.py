@@ -46,7 +46,7 @@ def test_is_tachycardic_not():
 
 @pytest.mark.parametrize("a, expected", [
     ("TAChyycardic", False),
-    # (4, False),
+    ("4", False),
     ("?!?!!!!!!!!!!tachycardic         ", True),
     (" tac?hycarDIC .", True),
 ])
