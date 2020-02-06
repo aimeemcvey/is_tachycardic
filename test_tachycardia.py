@@ -20,3 +20,10 @@ def test_is_tachycardic_mixed():
     answer = is_tachycardic("TAcHyCARDic")
     expected = True
     assert answer == expected
+
+
+def test_is_tachycardic_punctuation():
+    from tachycardia import is_tachycardic
+    answer = is_tachycardic("TA.cHyCARDic?!.")
+    expected = True
+    assert answer == expected
