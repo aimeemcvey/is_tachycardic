@@ -13,3 +13,10 @@ def test_is_tachycardic_upper():
     answer = is_tachycardic("TACHYCARDIC")
     expected = True
     assert answer == expected
+
+
+def test_is_tachycardic_mixed():
+    from tachycardia import is_tachycardic
+    answer = is_tachycardic("TAcHyCARDic")
+    expected = True
+    assert answer == expected
