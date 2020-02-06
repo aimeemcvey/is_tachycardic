@@ -16,17 +16,20 @@ def is_tachycardic(word):
         print("True")
         return True
     else:
-        target_word = []
-        my_word = []
-        for char in "tachycardic":
-            target_word.append(char)
-        for char in word:
-            my_word.append(char)
-        # if 9/11 chars match, return True
-        print(target_word)
-        print(my_word)
+        spellcheck(word)
         print("False")
         return False
+
+def spellcheck(word):
+    target_word = []
+    my_word = []
+    for char in "tachycardic":
+        target_word.append(char)
+    for char in word:
+        my_word.append(char)
+    # if 9/11 chars match, return True
+    print(target_word)
+    print(my_word)
 
 
 if __name__ == "__main__":
