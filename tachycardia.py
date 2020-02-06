@@ -1,8 +1,7 @@
 # tachycardia.py
 
 
-def is_tachycardic():
-    word = input("Input word: ")
+def is_tachycardic(word):
     print("{}" .format(word))
     # could be upper, lower, mixed case
     word = word.lower()
@@ -22,4 +21,5 @@ def is_tachycardic():
 
 
 if __name__ == "__main__":
-    is_tachycardic()
+    word = input("Input word: ")
+    is_tachycardic(word)
