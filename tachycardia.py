@@ -16,9 +16,15 @@ def is_tachycardic(word):
         print("True")
         return True
     else:
+        target_word = []
+        my_word = []
+        for char in "tachycardic":
+            target_word.append(char)
         for char in word:
-            print(char)
-            # if 9/11 chars match, return True
+            my_word.append(char)
+        # if 9/11 chars match, return True
+        print(target_word)
+        print(my_word)
         print("False")
         return False
 
