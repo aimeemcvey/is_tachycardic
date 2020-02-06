@@ -16,6 +16,9 @@ def is_tachycardic(word):
         print("True")
         return True
     else:
+        for char in word:
+            print(char)
+            # if 9/11 chars match, return True
         print("False")
         return False
 
