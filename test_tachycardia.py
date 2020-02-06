@@ -1,4 +1,5 @@
 # test_tachycardia.py
+import pytest
 
 
 def test_is_tachycardic_normal():
@@ -40,4 +41,16 @@ def test_is_tachycardic_not():
     from tachycardia import is_tachycardic
     answer = is_tachycardic(" cardic?!. ")
     expected = False
+    assert answer == expected
+
+
+@pytest.mark.parametrize("a, expected", [
+    ("TAChyycardic", False),
+    #(4, False),
+    ("?!?!!!!!!!!!!tachycardic         ", True),
+    (" tac?hycarDIC .", True),
+])
+def test_add_parametrize(a, expected):
+    from tachycardia import is_tachycardic
+    answer = is_tachycardic(a)
     assert answer == expected
