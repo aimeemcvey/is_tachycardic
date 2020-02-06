@@ -27,3 +27,10 @@ def test_is_tachycardic_punctuation():
     answer = is_tachycardic("TA.cHyCARDic?!.")
     expected = True
     assert answer == expected
+
+
+def test_is_tachycardic_whitespace():
+    from tachycardia import is_tachycardic
+    answer = is_tachycardic(" TA.cHyCARDic?!. ")
+    expected = True
+    assert answer == expected
