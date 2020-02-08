@@ -45,12 +45,24 @@ def test_is_tachycardic_not():
 
 
 @pytest.mark.parametrize("a, expected", [
-    ("TAChyycardic", False),
+    ("TAChyycardic", True),
     ("4", False),
     ("?!?!!!!!!!!!!tachycardic         ", True),
     (" tac?hycarDIC .", True),
 ])
-def test_add_parametrize(a, expected):
+def test_is_tachycardic_varinput_parametrize(a, expected):
     from tachycardia import is_tachycardic
     answer = is_tachycardic(a)
+    assert answer == expected
+
+
+@pytest.mark.parametrize("b, expected", [
+    ("tachycardia", True),
+    ("tachycrdi", True),
+    ("tachycard1c", True),
+    ("tackycardic", True),
+])
+def test_is_tachycardic_misspelled_parametrize(b, expected):
+    from tachycardia import is_tachycardic
+    answer = is_tachycardic(b)
     assert answer == expected
