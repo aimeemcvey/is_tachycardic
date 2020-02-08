@@ -11,19 +11,16 @@ def is_tachycardic(word):
     # or have leading/trailing spaces
     word = word.strip()
     if word == "tachycardic":
-        # print("True")
         return True
     else:
+        # check if spelling error
         x = 0
         for i in word:
             if i in "tachycardic":
                 x += 1
-                # print(i, x)
         if x >= 9:
-            # print("True")
             return True
         else:
-            # print("False")
             return False
 
 
