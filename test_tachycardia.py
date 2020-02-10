@@ -2,7 +2,7 @@
 import pytest
 
 
-def test_is_tachycardic_normal():
+def test_is_tachycardic_lower():
     from tachycardia import is_tachycardic
     answer = is_tachycardic("tachycardic")
     expected = True
