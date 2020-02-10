@@ -61,6 +61,8 @@ def test_is_tachycardic_varinput_parametrize(a, expected):
     ("tachycrdi", True),
     ("tachycard1c", True),
     ("tackycardic", True),
+    ("taycardc", False),
+    ("t@chyc@rd1c", False)
 ])
 def test_is_tachycardic_misspelled_parametrize(b, expected):
     from tachycardia import is_tachycardic
