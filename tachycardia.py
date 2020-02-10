@@ -24,6 +24,6 @@ def is_tachycardic(word):
             return False
 
 
-if __name__ == "__main__":
-    word = input("Input word: ")
-    is_tachycardic(word)
+#if __name__ == "__main__":
+    #word = input("Input word: ")
+    #is_tachycardic(word)
